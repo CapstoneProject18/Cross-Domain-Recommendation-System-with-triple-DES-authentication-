@@ -1,2 +1,3 @@
 # Cross-Domain-Recommendation-System-with-triple-DES-authentication-
-Cross domain recommender system where after obtaining an input from user of a movie we will be providing the user with a recommendation of 3 books. To reach the page on which the user has to enter the input, the user has to go through the login page which will be authenticated using triple DES authentication.
+Using Cross Domain Recommender System we will provide the user with a recommendation of 3 books once the user has entered the name of the movie based on which recommedation is required.
+To reach the page on which the user has to enter the name of the movie, the user has to go through the login page which will be authenticated using Triple DES Authentication.
