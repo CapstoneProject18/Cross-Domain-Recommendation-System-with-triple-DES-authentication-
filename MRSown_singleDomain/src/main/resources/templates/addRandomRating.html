@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<head>
+ <title>Add Random Ratings</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<style>
+
+                .rating {
+                    float: left;
+                  }
+
+                  .rating:not(:checked)>input {
+                    position: absolute;
+                    top: -9999px;
+                  }
+
+                  .rating:not(:checked)>label {
+                    float: right;
+                    width: 1em;
+                    cursor: pointer;
+                    font-size: 150%;
+                    color: #ddd;
+                  }
+
+                  .rating>input:checked~label.good {
+                    color: rgb(71, 163, 43);
+                  }
+                  .rating:not(:checked)>label.good:hover,
+                  .rating:not(:checked)>label:hover~label.good {
+                    color: rgb(71, 163, 43);
+                  }
+
+                  .rating>input:checked~label.bad {
+                    color: rgb(255, 158, 30);
+                  }
+                  .rating:not(:checked)>label.bad:hover,
+                  .rating:not(:checked)>label:hover~label.bad {
+                    color: rgb(255, 158, 30);
+                  }
+
+                  .rating>input:checked~label.verybad {
+                    color: rgb(247, 19, 19);
+                  }
+                  .rating:not(:checked)>label.verybad:hover,
+                  .rating:not(:checked)>label:hover~label.verybad {
+                    color: rgb(247, 19, 19);
+                  }
+                
+                  .rating>label:active {
+                    position: relative;
+                    top: 2px;
+                    left: 2px;
+                  }
+
+                  .border{
+                    border-radius: 10px;
+                    
+                    margin-left: 3px;
+                    border:solid 2px grey;
+                  }
+
+</style>
+
+</head>
+
+<body>
+
+
+<br />
+<div class="jumbotron jumbotron-fluid">
+
+  <div class="container">
+    <h1 class="display-4">Add A Rating To The Movie</h1>
+    <p class="lead">Add a rating to the movie :</p>
+ 
+  
+  <form th:action = "@{/addRandomRatings}" th:object="${addRandomRatingForm}" method="post" >
+  <div class="form-group row">
+    <h3>Movie Name:</h3>
+  	&nbsp;
+      <h3 th:text="${movieName}"/>
+    </div>
+    
+  <br>
+  </br>
+    
+    <div class="container">
+	<div class="row">
+		<div class="rating" align="center">
+		          <input type="radio" id="star10" name="rating" value="5" />
+                  <label class="good border" for="star10" title="Rocks!" >5</label>
+                  <input type="radio" id="star10" name="rating" value="4" />
+                  <label class="good border" for="star10" title="Rocks!" >4</label>
+                  <input type="radio" id="star9" name="rating" value="3" />
+                  <label class="good border" for="star9" title="Rocks!">3</label>
+                  <input type="radio" id="star8" name="rating" value="2" />
+                  <label class="bad border" for="star8" title="Pretty good">2</label>
+                  <input type="radio" id="star7" name="rating" value="1" />
+                  <label class="bad border" for="star7" title="Pretty good">1</label>
+                  <input type="radio" id="star6" name="rating" value="0" />
+                  <label class="bad border" for="star6" title="Meh">0</label>
+                  <input type="radio" id="star5" name="rating" value="-1" />
+                  <label class="verybad border" for="star5" title="Meh">-1</label>
+                  <input type="radio" id="star4" name="rating" value="-2" />
+                  <label class="verybad border" for="star4" title="Kinda bad">-2</label>
+                  <input type="radio" id="star3" name="rating" value="-3" />
+                  <label class="verybad border" for="star3" title="Kinda bad">-3</label>
+                  <input type="radio" id="star2" name="rating" value="-4" />
+                  <label class="verybad border" for="star2" title="Sucks big tim">-4</label>
+                  <input type="radio" id="star1" name="rating" value="-5" />
+                  <label class="verybad border" for="star1" title="Sucks big time">-5</label>
+                </div>   
+	</div>
+</div>
+   <button type='submit' name='btn_submit' class='col s12 btn btn-large waves-effect indigo' value="submit">Submit</button>
+  </div>   
+</form>
+<center>
+              <div class='row'>
+                <button type='submit' name='btn_back' class='col s12 btn btn-large waves-effect indigo' value="Back">Back</button>
+              </div>
+            </center>
+
+
+
+</div>
+
+
+</body>
+
+</html>

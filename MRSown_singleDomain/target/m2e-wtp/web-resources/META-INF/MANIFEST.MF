@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: movieRecommendationSystem
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Kashish
+Implementation-Vendor-Id: com.webIntelligence
+Build-Jdk: 1.8.0_151
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/movieRecommendationSystem
+Created-By: Maven Integration for Eclipse
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="User account registration" />
+  <meta name="author" content="Amir Boroumand" />
+  <link rel="icon" href="favicon.ico" />
+
+  <title>Registration Page</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous" />
+
+  <link th:href="@{css/style.css}" rel="stylesheet" />
+</head>
+
+<body class="gray-bg">
+	<div class="container">
+      <h4>New User Registration</h4>
+
+      <form th:action = "@{/register}" th:object="${registerForm}" method="post">
+		  
+		  
+		    <h1>Register</h1>
+		    <p>Please fill in this form to create an account.</p>
+		    
+		    <hr>
+		    
+		    <div class="form-inline">
+		     <div class="form-group">
+		    <label class="sr-only" for="FirstName"><b>First Name</b></label>
+		    <input type="text" class="form-control" placeholder="First name" name="FirstName" required>
+			</div>
+			<div class="form-group">
+		    <label class="sr-only" for="LastName"><b>Last Name</b></label>
+		    <input type="text" class="form-control" placeholder="Last name" name="LastName" required>
+		    </div>
+		    </div>
+		    <br><br>
+		    <div class="form-group">
+		    <label for="Gender"><b>Gender: </b></label> &nbsp;&nbsp;
+		    <label class="radio-inline">
+		    <input type="radio" name="Gender" value="male" checked> Male
+			</label>
+			<label class="radio-inline">
+			<input type="radio" name="Gender" value="female"> Female
+			</label>
+			<label class="radio-inline">
+			<input type="radio" name="Gender" value="other"> Other  
+		    </label>
+		    </div>
+		    
+			<div class="form-group">
+		    <label for="UserName"><b>User Name</b></label>
+		    <input type="text" class="form-control" placeholder="type a cool User Name" name="UserName" required>
+		    </div>
+		    
+		    <div class="form-group">		
+		    <label for="Email"><b>Email</b></label>
+		    <input type="text" class="form-control" placeholder="Enter Email@" name="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+		    </div>
+		
+			<div class="form-group">
+		    <label for="Password"><b>Password</b></label>
+		    <input type="password" class="form-control" placeholder="Enter Password" name="Password" required>
+		    </div>
+		
+		    
+		    <hr>
+		
+		    <button type="submit" class="registerbtn btn btn-primary">Register</button>
+		  </div>
+		
+		  <div class="container signin">
+		    <p>Already have an account? <a th:href="@{/login}">Sign in</a>.</p>
+		  </div>
+	</form>
+	</div>
+ <!-- jQuery-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Validator plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+
+
+</body>
+
+</html>
