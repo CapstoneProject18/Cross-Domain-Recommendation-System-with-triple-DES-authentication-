@@ -1,0 +1,81 @@
+<!DOCTYPE	 html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<head>
+  <title>DATA INSERTED</title>
+ 
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+  <title><ui:insert name="title">Index Page</ui:insert></title>
+
+<style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1 0 auto;
+    }
+
+    body {
+     
+
+
+    }
+
+    .input-field input[type=date]:focus + label,
+    .input-field input[type=text]:focus + label,
+    .input-field input[type=email]:focus + label,
+    .input-field input[type=password]:focus + label {
+      color: #e91e63;
+    }
+
+    .input-field input[type=date]:focus,
+    .input-field input[type=text]:focus,
+    .input-field input[type=email]:focus,
+    .input-field input[type=password]:focus {
+      border-bottom: 2px solid #e91e63;
+      box-shadow: none;
+    }
+  </style>
+
+</head>
+</style>
+  
+</head>
+
+<body >
+<div class="section"></div>
+  <main>
+    <center>
+     
+      <div class="section"></div>
+
+      <h5 class="black-text">DATA INSERTED !</h5>
+
+            <br />
+            <center>
+              <div class='row'>
+                <button  name='btn_back' class='col s12 btn btn-large waves-effect indigo' value="@{/addMovie}">Back</button>
+              </div>
+            </center>
+          </form>
+        </div>
+      </div>
+
+  </main>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+
+     
+
+</body>
+
+</html>
