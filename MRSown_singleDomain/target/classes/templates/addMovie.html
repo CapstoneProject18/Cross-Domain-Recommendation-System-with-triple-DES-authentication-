@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<head>
+  <title>Add Movie</title>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  
+</head>
+
+<body>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Add A Movie</h1>
+    <p class="lead">Add a movie to the database by giving the following information:</p>
+  </div>
+  
+  <form th:action = "@{/addMovie}" th:object="${addMovieForm}" method="post">
+  <div class="form-group">
+     <div class="col-xs-6">
+    <label for="movieName">movieName</label>
+    <input type="text" class="form-control" id="movieName" placeholder="Name of the movie" name="movieName" />
+  </div>
+    
+  <div class="input-group mb-3">
+    <label for="MID">Movie ID</label>
+    <input type="text" class="form-control" id="MID" placeholder="movie ID" name="MID"/>
+  </div>
+  </div>
+  
+    <div class="input-group mb-6">
+   		 <div class="col-xs-6">
+    <label for="year">Year</label>
+    <input type="text" class="form-control" placeholder="YYYY" id="year" name="year"/>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>    
+    &nbsp;&nbsp;
+     <button type='submit' name='btn_submit' class='col s12 btn btn-large waves-effect indigo' value="submit">Submit</button>
+</form>
+
+</div>
+      
+<br>  
+&nbsp;&nbsp;           
+<button name='btn_back' class='col s12 btn btn-large waves-effect indigo' value="Back">Back</button>
+            
+
+</body>
+
+</html>

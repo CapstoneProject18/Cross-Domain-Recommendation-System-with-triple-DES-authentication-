@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Recommender System</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" th:href="@{/css/main.css}"
+	href="../../css/main.css" />
+
+</head>
+
+<body class = "container"> 
+      <div class = "row" style = "width:600px;">
+         <div class = "col s12 m12 l12" >
+            <h5>Nav Bar</h5>
+            <nav>
+               <div class = "nav-wrapper">
+                  <a href = "#" class = "brand-logo">Recommender System</a>
+                  <ul id = "nav-mobile" class = "right hide-on-med-and-down">
+                     <li><a href = "#">HTML5</a></li>
+                     <li><a href = "#">CSS</a></li>
+                     <li><a href = "#">JavaScript</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </div>
+	<div class="container">
+
+		<div class="starter-template">
+			<h1 class = "card-panel teal lighten-2">Spring Boot Web Thymeleaf Example</h1>
+			<h2>
+				<span th:text="'Message: ' + ${message}"></span>
+			</h2>
+		</div>
+
+	</div>
+	<!-- /.container -->
+ <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

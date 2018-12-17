@@ -1,0 +1,97 @@
+<!DOCTYPE	 html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<head>
+  <title>Movie Recommendor System</title>
+ 
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+  <title><ui:insert name="title">Index Page</ui:insert></title>
+
+<style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1 0 auto;
+    }
+
+    body {
+     
+
+
+    }
+
+    .input-field input[type=date]:focus + label,
+    .input-field input[type=text]:focus + label,
+    .input-field input[type=email]:focus + label,
+    .input-field input[type=password]:focus + label {
+      color: #e91e63;
+    }
+
+    .input-field input[type=date]:focus,
+    .input-field input[type=text]:focus,
+    .input-field input[type=email]:focus,
+    .input-field input[type=password]:focus {
+      border-bottom: 2px solid #e91e63;
+      box-shadow: none;
+    }
+  </style>
+
+</head>
+</style>
+  
+</head>
+
+<body >
+<div class="section"></div>
+  <main>
+    <center>
+     
+      <div class="section"></div>
+
+      <h5 class="black-text">WELCOME TO OUR WEBSITE ! We are happy to serve!</h5>
+      <div class="section"></div>
+
+      <div class="container">
+        <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+
+          <form class="col s12" th:action = "@{/login}" th:object="${loginForm}" method="get">
+            <div class='row'>
+              <div class='col s12'>
+              <img th:src="@{/images/login.png}" alt="login icon" height="70" width = "70" />
+              </div>
+            </div>
+
+     
+
+            <br />
+            <center>
+              <div class='row'>
+                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo' value="@{/login}">Login</button>
+              </div>
+            </center>
+          </form>
+        </div>
+      </div>
+ 
+
+    <div class="section"></div>
+    <div class="section"></div>
+  </main>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+
+     
+
+</body>
+
+</html>
