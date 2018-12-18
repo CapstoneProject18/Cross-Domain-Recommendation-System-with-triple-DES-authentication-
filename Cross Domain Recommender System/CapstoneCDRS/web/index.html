@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>CDRS</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </h:head>
+    <h:body>
+        <div id="menu">
+            <div id="menu_list"> 
+                <a href="#">Home</a>
+                <img src="images/splitter.gif" class="splitter" alt="" />
+                <a href="#">Cross Domain</a>
+                <img src="images/splitter.gif" class="splitter" alt="" />
+                <a href="#">Single Domain</a>
+                <img src="images/splitter.gif" class="splitter" alt="" />
+                <a href="#">Logout</a>
+                <img src="images/splitter.gif" class="splitter" alt="" />
+            </div>
+        </div>
+        <div id="header">
+            <div id="slogan">Cross Domain Recommender System</div>
+        </div>
+        <div id="main">
+            <h:form>
+              <h:panelGrid >
+                    <h:outputLabel value="Name of the book:"/>
+                    <h:inputText id="fName" value="#{javabean.variableName}"/>
+                </h:panelGrid>
+                <h:outputText escape="false" style="color:black" value="#{pizza.response}"/>
+
+            </h:form>
+            <div id="text" >
+                <h1>Working example of CDRS</h1>
+                <p>Enter the book name to get the recommendation of three movies!</p>
+                <h:form>
+                    <h:panelGrid >
+                       <h:outputLabel value="Name of the book:"/>
+                        <h:inputText id="fName" value="#{javabean.variableName}"/>
+                    </h:panelGrid>
+                </h:form>
+                    <h1>About CDRS</h1>
+                    <p>Recommender system has the ability to predict whether a particular user would prefer an item 
+                        or not based on the user's profile and hence are beneficial to both service providers and users.
+                        Cross domain recommender systems can assist recommendations to a user in target domain based on 
+                        knowledge learned from the items in source domain.
+                    <br/>                 
+                        With the rapid growth of the Web in terms of users and items, 
+                        majority of the Recommender Systems using Collaborative Filtering technique
+                        suffers from the scalability problem because similarities between every pair of users 
+                        and/or items need to be computed during the training phase. 
+                    </p>
+                    <p>
+                        In order to address this scalability issue,
+                       we partition the entire users’ space into smaller regions based on the attribute, and then apply the 
+                        Recommendation Algorithm separately to these regions. This helps us to avoid computations
+                        over the entire data. One of the main objectives of our work is to reduce the running time
+                        without compromising the recommendation quality much. This ensures scalability, allowing us
+                        to tackle bigger datasets using the same resources.
+                    </p>
+                    <p>
+                        It helps in making the following things:
+                    </p>
+                    <ol>
+                       <li>1) Increased Speed – Time Efficiency of recommendations.</li>
+                        <li>2) Due to the notion of making independent disjoint sets – Parallel Processing of recommendations.</li>
+                        <li>3) Improved the quality of recommendations which are highly accurate through – Natural Language Processing.  </li>
+                    </ol>
+              </div>
+        </div>
+       <div id="footer">
+            <div id="left_footer">&copy; Copyright 2009 <strong>Triple DES with CDRS and SDRS</strong></div>
+        </div>
+    </h:body>
+</html>
