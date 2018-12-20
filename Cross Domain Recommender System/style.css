@@ -1,0 +1,72 @@
+* {margin:0;padding:0}
+html {min-width:940px} 
+body {background:url(images/tail-top.gif) repeat-x left top #fff;font-family:Tahoma,Arial,helvetica,sans-serif;font-size:100%;line-height:1em;color:#454545;min-width:940px}
+object {vertical-align:top;outline:none}
+input,textarea,select {font-family:Tahoma,Arial,helvetica,sans-serif;font-size:1em;vertical-align:middle;font-weight:normal}
+fieldset {border:0}
+p {margin:0;padding:0}
+img {border:0;vertical-align:top;text-align:left}
+ul,ol {list-style:none}
+#main {width:940px;margin:0 auto}
+#header,#content,#footer {font-size:0.75em}
+.col-1,.col-2,.col-3 {float:left}
+#content .col-1 {width:810px;padding:12px 0}
+
+.fleft {float:left}
+.fright {float:right}
+.clear {clear:both}
+.alignright {text-align:right}
+.aligncenter {text-align:center}
+.wrapper {width:100%;overflow:hidden}
+.extra-wrap {overflow:hidden}
+.container {width:100%}
+
+#search-form label {color:#fff;font-size:16px;line-height:1.2em;text-transform:uppercase;float:left;margin-right:13px}
+#search-form input {background-color:#fff;border:0;width:174px;float:left;padding:4px 3px 4px 3px;margin-right:12px}
+#search-form .link1 {position:relative;top:-2px}
+
+
+p {line-height:1.83em;margin-bottom:20px}
+.p0 {margin:0}
+
+a {color:#1f7dd2;outline:none}
+a:hover {text-decoration:none}
+h2 {font-size:40px;line-height:1.2em;margin-bottom:10px}
+h2 b {display:block;padding-left:95px;margin-top:-12px}
+h3 {font-size:32px;line-height:1.2em;letter-spacing:-1px;margin-bottom:15px}
+h3 b {color:#1f7dd2}
+.link1 {font-size:16px;text-decoration:none;color:#fff;float:left;text-transform:uppercase;display:inline-block;cursor:pointer;background:url(images/button-left.png) no-repeat left top}
+.link1 em {display:inline-block;padding:0 5px;background:url(images/button-right.png) no-repeat right top}
+.link1 b {display:inline-block;background:url(images/button-tail.gif) repeat-x left top;padding:3px 9px 4px 9px}
+
+/* HEADER */
+#header {height:169px;position:relative}
+#header .row-2 {background:url(images/nav-tail.gif) repeat-x left top;margin-bottom:-3px;position:relative}
+#header .row-2 .left {background:url(images/nav-left.gif) no-repeat left top}
+#header .row-2 ul {height:58px;width:100%;overflow:hidden;background:url(images/nav-right.gif) no-repeat right top}
+#header .row-2 ul li {float:left;text-transform:uppercase;font-size:16px;line-height:1.2em;background:url(images/divider.gif) no-repeat right 4px;padding:4px 2px 0 0}
+#header .row-2 ul li.last {background:none;padding-right:0}
+#header .row-2 ul li.last a {width:188px}
+#header .row-2 ul li a {text-decoration:none;color:#fff;width:186px;text-align:center;display:block;padding:14px 0 0 0;cursor:pointer;background:url(images/spacer.gif)}
+#header .row-2 ul li a span {display:block;height:40px}
+#header .row-2 ul li a:hover,
+#header .row-2 ul li a.active {background:url(images/nav-act.png) repeat-x left top}
+#header .row-2 ul li a:hover span,
+#header .row-2 ul li a.active span {background:url(images/nav-arrow.gif) no-repeat center bottom}
+#header .row-3 {height:106px;overflow:hidden;background:url(images/header-tail.gif) repeat-x left top}
+#header .row-3 .inside {padding:35px 0 0 50px;width:150px;position:relative;z-index:2}
+#header .row-3 .inside p {color:#fff;line-height:1.0em}
+#header .extra {position:absolute;left:0;top:142px}
+/* CONTENT */
+#content {padding-bottom:30px}
+#content .ic, #content .ic a {border:0;float:right;background:#000;color:#f00;width:100%;line-height:10px;font-size:10px;margin:-50% 0 0 0;overflow:hidden;padding:0}
+#content .indent {padding:0 0 0 49px}
+/* FOOTER */
+#footer .footer-nav {background:url(images/footer-nav-tail.gif) repeat-x left top}
+#footer .footer-nav .left {background:url(images/footer-nav-left.gif) no-repeat left top}
+#footer .footer-nav ul {width:100%;overflow:hidden;padding:15px 0 16px 0;background:url(images/footer-nav-right.gif) no-repeat right top}
+#footer .footer-nav ul li {float:left;font-family:Arial,Helvetica,sans-serif;font-weight:bold;line-height:1em;border-right:1px solid #fff;padding:0 72px}
+#footer .footer-nav ul li.last {border:0}
+#footer .footer-nav ul li a {color:#fff}
+#footer .bottom {background:url(images/footer-tail.gif) repeat-x left top #000;text-align:center;color:#fff;line-height:1.67em;padding:18px 0 23px 0}
+#footer a {color:#4399e6}
