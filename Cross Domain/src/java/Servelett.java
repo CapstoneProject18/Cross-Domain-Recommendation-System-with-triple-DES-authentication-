@@ -66,15 +66,19 @@ public class Servelett extends HttpServlet {
 "				<div class=\"row-3\">\n" +
 "					<center><h2>Cross Domain Recommender System</h2></center>\n" +
 "                                       \n" +
+"                    <form action=\"a\" id=\"search-form\" method=\"get\" style=\"padding-left: 470px; padding-top: 15px\">\n"+
+"                            <fieldset><label style=\"align-content: center;\">Enter Book Name:</label><input type=\"text\" name=\"ip\">\n"+
+                            "<em><b><input type=\"submit\" value=\"Go\"></input></b></em></fieldset>"
+                            + "</form><br><br>"+
 "				</div>\n" +
 "			</div>\n" +
 "		<div id=\"content\">\n" +
 "			<div class=\"wrapper\">\n" +
-"				<div class=\"col-1\"; style=\"padding-left: 410px\" >\n" +
-"                                    <h3 style=\"padding-left: 30px\" >Following are the results based on your search</h3>\n" +
-"				<div class=\"col-1\"; style=\"padding-left: 180px\" >\n" +
-"						<p><b style=\"padding-left: 90px\" ><u>Queried Book:</u></b> <br><br> " +  arrRes[0]+"<br>"+  arrRes[1]+"<br><br>"
-        + "<br><b style=\"padding-left: 60px\"><u>Recommended Movies:</u></b><br></br>"
+"				<div class=\"col-1\"; style=\"padding-left: 410px\" >\n" 
+                            + "<h3 style=\"padding-left: 30px\" >Following are the results based on your search</h3>\n" +
+"				<div class=\"col-1\"; style=\"padding-left: 200px\" >\n" +
+"						<p><b style=\"padding-left: 80px\" ><u>Queried Book:</u></b> <br><br> " +  arrRes[0]+"<br>"+  arrRes[1]+"<br><br>"
+        + "<br><b style=\"padding-left: 50px\"><u>Recommended Movies:</u></b><br></br>"
                                                   +  arrRes[2]+"<br>"+  arrRes[3]+"<br>"+ arrRes[4]+"<br>"+
  "				</div>\n" +
 "				</div>\n" +
