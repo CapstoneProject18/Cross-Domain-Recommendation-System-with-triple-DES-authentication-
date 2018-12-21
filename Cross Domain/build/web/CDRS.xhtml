@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <head>
+		<title>Home - Home Page</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+		<script src="js/cufon-yui.js" type="text/javascript"></script>
+		<script src="js/cufon-replace.js" type="text/javascript"></script>
+		<script src="js/Myriad_Pro_400.font.js" type="text/javascript"></script>
+		<script src="js/Myriad_Pro_600.font.js" type="text/javascript"></script>
+		<script src="js/NewsGoth_BT_400.font.js" type="text/javascript"></script>
+		<script src="js/NewsGoth_BT_700.font.js" type="text/javascript"></script>
+		<script src="js/NewsGoth_Dm_BT_400.font.js" type="text/javascript"></script>
+		<script src="js/script.js" type="text/javascript"></script>
+	</head>
+    <body id="page1" style="background-color: antiquewhite; " >
+<!--        <img src="images\image001-1.png"/>-->
+		<div id="main">
+                    
+			<div id="header">		
+				<div class="row-2">
+					<div class="left">
+						<ul>
+							<li><a href="CDRS.xhtml" class="active"><span>Cross Domain</span></a></li>
+							<li><a href="#"><span>Logout</span></a></li>
+						</ul>
+					</div>
+				</div>
+                            <div class="row-3">
+                                    <h2 style="text-align: center">Cross Domain Recommender System</h2>
+                               
+                                    <form action="a" id="search-form" method="get" style="padding-left: 500px; padding-top: 15px">
+                                                <fieldset><label style="align-content: center">Enter Book Name:</label><input type="text" name="ip"/>
+                                                <em><b><input type="submit" value="Go"></input></b></em></fieldset>
+				</form>
+				</div>
+			</div>
+		<div id="content">
+			<div class="wrapper">
+                            <div class="col-1" style="padding-left: 410px">
+                                    <h3><b>About</b> Cross Domain Recommender System</h3>
+						<p>Recommender system has the ability to predict whether a particular user would prefer an item or not based on the user's profile and hence are beneficial to both service providers and users.Cross domain recommender systems can assist recommendations to a user in target domain based on knowledge learned from the items in source domain.<br/>
+						<br/>
+						With the rapid growth of the Web in terms of users and items, majority of the Recommender Systems using Collaborative Filtering technique suffers from the scalability problem because similarities between every pair of users and/or items need to be computed during the training phase.<br/>
+						In order to address this scalability issue, we partition the entire users’ space into smaller regions based on the attribute, and then apply the Recommendation Algorithm separately to these regions. This helps us to avoid computations over the entire data. One of the main objectives of our work is to reduce the running time without compromising the recommendation quality much. This ensures scalability, allowing us to tackle bigger datasets using the same resources. 
+						</p>
+						<p>
+						 It helps in making the following things:
+						</p>
+						<ol>
+							<li>1) Increased Speed – Time Efficiency of recommendations.</li>
+							<li>2) Due to the notion of making independent disjoint sets – Parallel Processing of recommendations.</li>
+							<li>3) Improved the quality of recommendations which are highly accurate through – Natural Language Processing. </li>
+						</ol>
+				</div>
+			</div>
+		</div>
+                    
+		<div id="footer">
+			<div class="footer-nav">
+				<div class="left">
+					<ul>
+						<li><a href="CDRS.xhtml">CDRS</a></li>
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottom">
+				Copyright - Cross Domain Recommender System with Triple DES Authentication<br />
+			</div>
+		</div>
+	</div>
+            
+
+	<script type="text/javascript"> Cufon.now(); </script>
+	</body>
+</html>
